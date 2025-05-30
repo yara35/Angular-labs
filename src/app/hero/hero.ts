@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './hero.css'
 })
 export class Hero {
-
+  proimg = 'assets/images/profile.jpeg'
 }
