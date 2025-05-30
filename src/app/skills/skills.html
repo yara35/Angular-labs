@@ -1,0 +1,15 @@
+<div class="bg-dark text-white py-5">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <p class="text-center">IN TECHNOLOGIES</p>
+
+    <div *ngFor="let skill of skills" class="mb-3">
+      <label>{{skill.name}}</label>
+      <div class="progress">
+        <div class="progress-bar" [style.width]="skill.level + '%'" role="progressbar" style="background-color: #4C000F">
+          {{skill.level}}%
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

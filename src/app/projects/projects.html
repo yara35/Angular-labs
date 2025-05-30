@@ -1,0 +1,33 @@
+<div class="container text-center my-5" id="projects">
+<h2>Projects</h2>
+  <div class="row mt-4">
+    <div class="col-md-6 mb-3" *ngFor="let project of projects">
+      <div class="p-4 shadow-sm bg-light">
+        <div class="project-container">
+            <div class="project-card">
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+                <div class="project-images">
+                    <div class="image-with-description">
+                        <img [src]="project.image" alt="Home">
+                        <p>Showing the main page where users can search for available workspaces.</p>
+                    </div>
+                    <div class="image-with-description">
+                        <img src="assets/images/cards.png" alt="Cards">
+                        <p>Showing the different workspace options available for booking.</p>
+                    </div>
+                    <div class="image-with-description">
+                        <img src="/assets/images/service.png" alt="Services">
+                        <p>Showing the services provided in each workspace.</p>
+                    </div>
+                    <div class="image-with-description">
+                        <img src="assets/images/payment.png" alt="Booking">
+                        <p>Showing the payment options for booking a workspace.</p>
+                    </div>
+                </div>
+            </div>
+
+      </div>
+    </div>
+  </div>
+</div>
