@@ -1,3 +1,6 @@
-<input [(ngModel)]="searchTerm" placeholder="Search by email" />
+<input [(ngModel)]="searchTerm" appEmailValidation (emailValid)="onEmailValid($event)" placeholder="Search by email" />
+<div *ngIf="!isEmailValid && searchTerm">
+  <p style="color: red;">Invalid email. Please enter a Gmail or Yahoo address</p>
+</div>
 <button (click)="onSearchClick()">Search</button>
 <button *ngIf="searchTerm.trim()" (click)="onResetClick()" class="btn-custom">Reset</button>
