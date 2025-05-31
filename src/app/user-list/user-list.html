@@ -1,0 +1,14 @@
+<div class="cards">
+  <div class="card" *ngFor="let user of users">
+    <img [src]="user.profile" alt="Profile Picture" />
+    <p><strong>{{ user.username }}</strong></p>
+    <p>{{ user.email }}</p>
+    <p>{{ user.phone }}</p>
+    <span
+      [ngClass]="user.isVerified ? 'verified' : 'not-verified'"
+      class="verification-icon"
+    >
+      {{ user.isVerified ? '✔' : '✘' }}
+    </span>
+  </div>
+</div>

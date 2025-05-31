@@ -1,0 +1,5 @@
+<div class="container">
+    <h2>Users</h2>
+    <app-search (search)="onSearch($event)" (reset)="onReset()"></app-search>
+    <app-user-list [users]="filteredUsers"></app-user-list>
+</div>

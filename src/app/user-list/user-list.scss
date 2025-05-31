@@ -1,0 +1,35 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 150px;
+  text-align: center;
+  position: relative;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.verification-icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.verified {
+  color: green;
+}
+
+.not-verified {
+  color: red;
+}

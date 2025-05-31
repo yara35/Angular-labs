@@ -1,0 +1,3 @@
+<input [(ngModel)]="searchTerm" placeholder="Search by email" />
+<button (click)="onSearchClick()">Search</button>
+<button *ngIf="searchTerm.trim()" (click)="onResetClick()" class="btn-custom">Reset</button>

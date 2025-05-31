@@ -1,0 +1,28 @@
+[ {
+    "username": "yara",
+    "email": "yara@email.com",
+    "phone": "01012345678",
+    "profile": "assets/yara.jpg",
+    "isVerified": true
+  },
+  {
+    "username": "salma",
+    "email": "salma@email.com",
+    "phone": "01087654321",
+    "profile": "assets/salma.jpg",
+    "isVerified": false
+  },
+   {
+    "username": "omar",
+    "email": "omar@email.com",
+    "phone": "01012345678",
+    "profile": "https://i.pravatar.cc/150?img=1",
+    "isVerified": true
+  },
+    {
+    "username": "Mona456",
+    "email": "mona@example.com",
+    "phone": "01087654321",
+    "profile": "https://i.pravatar.cc/150?img=2",
+    "isVerified": false
+  }]
