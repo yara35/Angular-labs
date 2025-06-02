@@ -1,0 +1,30 @@
+<!-- product-details.component.html -->
+<!-- <div *ngIf="product">
+  <img [src]="product.image">
+  <h2>{{ product.title }}</h2>
+  <p>{{ product.description }}</p>
+  <p>{{ product.price }} EGP</p> -->
+  <!-- <p [ngClass]="{ 'text-danger': product.stock == 0, 'text-success': product.stock > 0 }">
+    {{ product.stock == 0 ? 'Out of Stock' : 'In Stock' }}
+  </p> -->
+<!-- </div> -->
+<div *ngIf="product" class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center">
+      <img [src]="product.image" class="img-fluid rounded shadow" alt="{{ product.title }}" />
+    </div>
+
+    <div class="col-md-6">
+      <h2 class="mb-3">{{ product.title }}</h2>
+      <h4 class="text-muted mb-3">{{ product.price }} EGP</h4>
+      <p class="mb-4">{{ product.description }}</p>
+
+      <div class="d-flex gap-3">
+        <button class="btn btn-primary">Add to Cart</button>
+        <button class="custom-btn" (click)="goBack()">← Back to Products</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+

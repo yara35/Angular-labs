@@ -1,0 +1,22 @@
+/* .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+} */
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+/* img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+} */

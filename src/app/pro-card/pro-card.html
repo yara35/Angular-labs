@@ -1,0 +1,21 @@
+<!-- <div class="cards" *ngFor="let product of products">
+    <div class="card">
+        <img [src] = "product.image">
+        <p>{{product.title}}</p>
+        <p>{{product.price}}</p>
+        <p>{{product.rating.rate}}</p>
+    </div>
+</div> -->
+
+<div class="card h-100 shadow-sm">
+  <img [src]="product.image" class="card-img-top p-3" [alt]="product.title" style="height: 250px; object-fit: contain;">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.title | slice:0:40 }}...</h5>
+    <p class="card-text text-muted">{{ product.price }}$</p>
+    <button class="btn btn-primary" (click)="addToCart(product)">Add to Cart</button>
+    <a [routerLink]="['/product', product.id]" class="btn btn-outline-secondary">View Product</a>
+  </div>
+</div>
+
+
+

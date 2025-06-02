@@ -1,0 +1,16 @@
+img {
+  max-height: 400px;
+  object-fit: contain;
+}
+img:hover{
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+}
+.custom-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
